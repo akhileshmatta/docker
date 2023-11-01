@@ -1,0 +1,29 @@
+<table class="table">
+	<tbody>
+		<th>
+			Name
+		</th>
+		<th>email</th>
+		<th>subject</th>
+		<th>message</th>
+		<th>Time</th>
+		<tr *ngFor="let user of user_details">
+
+			<td>
+				<span class="tick">{{ user.user_name }}</span>
+			</td>
+			<td>
+				<span class="tick">{{ user.email }}</span>
+			</td>
+			<td>
+				<span class="tick">{{ user.subj }}</span>
+			</td>
+			<td>
+				<span class="tick">{{ user.message }}</span>
+			</td>
+			<td>
+				<span class="tick">{{ user.insert_time.slice(0, 10) + ' ' + user.insert_time.slice(11, 19) }}</span>
+			</td>
+		</tr>
+	</tbody>
+</table>
